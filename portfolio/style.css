@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +30,7 @@ p {
   font-size: 30px;
   border-radius: 15px;
   margin-bottom: 15px;
-} 
+}
 
 header {
   width: 100%;
@@ -63,7 +63,7 @@ ul {
   display: block;
   margin: 0 auto;
 }
-a {
+.nav {
   text-decoration: none;
   color: white;
 }
@@ -74,7 +74,7 @@ li {
 li:hover {
   text-decoration: underline;
 }
-img {
+.logo-img {
   border-radius: 100px;
   display: inline-block;
   width: 100px;
@@ -90,27 +90,27 @@ body {
   margin: 0 auto;
   max-width: 100%;
   width: 100%;
-position: absolute;
-left:0;
-  margin-top:220px;
+  position: absolute;
+  left: 0;
+  margin-top: 220px;
   /* border: 5px solid grey; */
-/* text-align: center; */
+  /* text-align: center; */
 }
-.oeb{
-  margin:0 auto;
+.oeb {
+  margin: 0 auto;
   width: 80%;
 }
-.container p{
-  color:black;
-  font-size:21px;
-  text-align:justify;
+.container p {
+  color: black;
+  font-size: 21px;
+  text-align: justify;
 }
-.container li{
-  border:0;
+.container li {
+  border: 0;
 }
-.container ul{
+.container ul {
   padding-left: 40px;
-  margin:16px 16px;
+  margin: 16px 16px;
 }
 .modal-container {
   background-color: rgba(0, 0, 0, 0.6);
@@ -120,27 +120,27 @@ left:0;
   left: 0;
   right: 0;
   bottom: 0;
-
 }
-.modal p{
-  color:black;
+.modal p {
+  color: black;
   font-size: 16px;
-  text-align:left;
+  text-align: left;
 }
-.modal h3{
-    background-color: blue;
+.modal h3 {
+  background-color: blue;
 }
 .modal-container.show-modal {
   display: block;
 }
-.submit-btn{
-     color: white;
+.submit-btn {
+  color: white;
   background-color: rebeccapurple;
-   font-size: 16px;
+  font-size: 16px;
   border-radius: 5px;
   text-align: center;
 }
-.modal h3,.submit-btn{
+.modal h3,
+.submit-btn {
   padding: 5px;
   margin-left: 10px;
 }
@@ -214,7 +214,6 @@ left:0;
   font-size: 40px;
 }
 
-
 @keyframes modalopen {
   from {
     opacity: 0;
@@ -223,4 +222,16 @@ left:0;
   to {
     opacity: 1;
   }
+}
+.container img {
+  display:block;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+.oeb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- <div id="data" style="height: 500px; width: 500px; overflow: hidden; border: 10px solid aqua; border-radius: 1rem;"> -->
+  <!-- </div> -->
+<img src="" alt="" id="image">
+  <input type="file" id="input" webkitdirectory directory multiple>
+  <script>
+    const inputElement = document.getElementById("input");
+    inputElement.addEventListener("change", handleFiles, false);
+
+    let fileList;
+let imageArray=[];
+    function handleFiles() {
+      fileList = this.files; /* now you can work with the file list */
+      console.log(this.files)
+      for (let i = 0; i < fileList.length; i++) {
+        imageArray.push(fileList[i].webkitRelativePath);
+      }
+      console.log(imageArray);
+    }
+$["img"].attr['src',imageArray[0]];
+// document.getElementById("image").src="./"
+  </script>
+</body>
+
+</html>

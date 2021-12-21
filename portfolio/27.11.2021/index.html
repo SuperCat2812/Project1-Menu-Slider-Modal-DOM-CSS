@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .calculator_container {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: red;
+      font-size: 32px;
+    }
+
+    .calculator {
+      width: 300px;
+      border: 1px red solid;
+      padding: 5px;
+      border-radius: 8px;
+    }
+
+    #screen {
+      width: 93%;
+      height: 45px;
+      border: 1px red solid;
+      display: flex;
+      padding: 5px;
+      align-items: center;
+      margin: 5% auto 2% auto;
+      border-radius: 8px;
+    }
+
+    #figures,
+    #actions {
+      display: flex;
+      flex-wrap: wrap;
+      width: 95%;
+      margin: 0 auto;
+      padding: 5px;
+      border-radius: 8px;
+    }
+
+    #figures div,
+    #actions div {
+      width: 29.23%;
+      cursor: pointer;
+      border: 1px red solid;
+      padding: 2px;
+      text-align: center;
+      margin: 1%;
+      transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      border-radius: 8px;
+    }
+
+    #figures div:hover,
+    #actions div:hover {
+      background-color: bisque;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calculator_container">
+    <div class="calculator">
+      <div id="screen"></div>
+      <div id="figures">
+        <div id="reset">&#8634;</div>
+        <div id="back">&#8592;</div>
+        <div id="0">0</div>
+        <div id="1">1</div>
+        <div id="2">2</div>
+        <div id="3">3</div>
+        <div id="4">4</div>
+        <div id="5">5</div>
+        <div id="6">6</div>
+        <div id="7">7</div>
+        <div id="8">8</div>
+        <div id="9">9</div>
+      </div>
+      <div id="actions">
+        <div id="dot">.</div>
+        <div id="plus">+</div>
+        <div id="minus">-</div>
+        <div id="times">&times;</div>
+        <div id="divide">/</div>
+        <div id="equals">=</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./index.js" type="module"></script>
+
+</html>
