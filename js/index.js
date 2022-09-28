@@ -21,37 +21,37 @@ function Remove() {
 function mover() {
   let leftn = window.getComputedStyle(nav).getPropertyValue("left");
   let lefth = window.getComputedStyle(header).getPropertyValue("left");
-let leftc=window.getComputedStyle(container).getPropertyValue("left");
+  let leftc = window.getComputedStyle(container).getPropertyValue("left");
   console.log(668);
-leftc=parseInt(leftc);
+  leftc = parseInt(leftc);
   leftn = parseInt(leftn);
   lefth = parseInt(lefth);
   console.log(leftn);
   console.log(lefth);
-  if (leftn == 0 || lefth == 150||leftc==150) {
+  if (leftn == 0 || lefth == 150 || leftc == 150) {
     clearInterval(movei);
     console.log(99);
   } else {
     leftn += 15;
     lefth += 15;
-    leftc+= 15;
+    leftc += 15;
     header.style.left = lefth + "px";
     nav.style.left = leftn + "px";
-    container.style.left=leftc+"px";
+    container.style.left = leftc + "px";
     console.log(88);
   }
 }
 function movel() {
   let leftn = window.getComputedStyle(nav).getPropertyValue("left");
   let lefth = window.getComputedStyle(header).getPropertyValue("left");
-  let leftc=window.getComputedStyle(container).getPropertyValue("left");
+  let leftc = window.getComputedStyle(container).getPropertyValue("left");
   console.log(6689);
-leftc=parseInt(leftc);
+  leftc = parseInt(leftc);
   leftn = parseInt(leftn);
   lefth = parseInt(lefth);
   console.log(leftn);
   console.log(lefth);
-  if (leftn == -150 || lefth == 0||leftc==0) {
+  if (leftn == -150 || lefth == 0 || leftc == 0) {
     clearInterval(movei);
     console.log(997);
   } else {
@@ -60,7 +60,7 @@ leftc=parseInt(leftc);
     leftc -= 15;
     header.style.left = lefth + "px";
     nav.style.left = leftn + "px";
-    container.style.left=leftc+"px";
+    container.style.left = leftc + "px";
     console.log(882);
   }
 }

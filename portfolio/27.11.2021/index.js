@@ -26,7 +26,7 @@ document.getElementById("equals").addEventListener("click",
         .textContent) + parseFloat(firstValue);
     }
     else if (znak == 2) {
-      a =  parseFloat(firstValue)- parseFloat(document.getElementById("screen")
+      a = parseFloat(firstValue) - parseFloat(document.getElementById("screen")
         .textContent);
     }
     else if (znak == 3) {
@@ -34,8 +34,8 @@ document.getElementById("equals").addEventListener("click",
         .textContent) * parseFloat(firstValue);
     }
     else if (znak == 4) {
-      a = parseFloat(firstValue)/ parseFloat(document.getElementById("screen")
-        .textContent) ;
+      a = parseFloat(firstValue) / parseFloat(document.getElementById("screen")
+        .textContent);
     }
     document.getElementById("screen").textContent = a;
 

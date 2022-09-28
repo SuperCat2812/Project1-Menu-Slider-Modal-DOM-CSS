@@ -224,7 +224,7 @@ body {
   }
 }
 .container img {
-  display:block;
+  display: block;
   width: 250px;
   height: 250px;
   object-fit: contain;

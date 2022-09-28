@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY PAGE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MY PAGE</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-</head>
-
-<body>
-  <nav class="nav">
-    <div class="logo">
-      <img src="../img/photo_2018-11-19_20-42-59.jpg" alt="user" class="logo-img">
-    </div>
-    <ul>
-      <li><a href="../index.html" class="nav">Моя сторінка</a></li>
-      <li><a href="./index.html" class="nav">Галерея</a></li>
-      <li><a href="../contact/index.html" class="nav">Мої контакти</a></li>
-    </ul>
-  </nav>
-  <header class="header">
-    <button id="toggle">
-      <i class="fa fa-bars fa-1x"></i>
-    </button>
-    <h1>Галерея</h1>
-    <p>
-      Карпенко Олександр Андрійович
-    <p>
-      <button class="cta-btn" id="open">Написати мені</button>
-  </header>
-  <div class="container">
-    <div class="oeb">
-    
-      <a href="./04.12.2021/index.html" target="_blank"><img src="./img/tic-tac.png" alt="tic-tac"></a>
-     
-    <a href="./11.12.2021/index.html"target="_blank"><img src="./img/files.png" alt=""></a> 
-    <a href="./18,12,2021/index.html" target="_blank"><img src="./img/secundomer.png" alt=""></a>
-    
-    <a href="./27.11.2021/index.html" target="_blank"><img src="./img/calkulator.png" alt=""></a> 
-    
-    </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal-container" id="modal">
-    <div class="modal">
-      <button class="close-btn" id="close">
-        <i class="fa fa-times"></i>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <img
+          src="../img/photo_2018-11-19_20-42-59.jpg"
+          alt="user"
+          class="logo-img"
+        />
+      </div>
+      <ul>
+        <li><a href="../index.html" class="nav">Моя сторінка</a></li>
+        <li><a href="./index.html" class="nav">Галерея</a></li>
+        <li><a href="../contact/index.html" class="nav">Мої контакти</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <button id="toggle">
+        <i class="fa fa-bars fa-1x"></i>
       </button>
-      <div class="modal-header">
-        <h3>Написати мені</h3>
-      </div>
-      <div class="modal-content">
-        <p>Залиши тут свої контакти та запитання</p>
-        <form class="modal-form">
-          <div>
-            <label for="name">Ім'я</label>
-            <input type="text" id="name" placeholder="Твоє ім'я" class="form-input" />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Твій Email" class="form-input" />
-          </div>
-          <div>
-            <label for="password">Повідомлення</label>
-            <textarea placeholder="Напиши своє повідомлення" class="form-text" rows="5" cols="33"></textarea>
-          </div>
-          <input type="submit" value="Надіслати" class="submit-btn" />
-        </form>
+      <h1>Галерея</h1>
+      <p>Карпенко Олександр Андрійович</p>
+
+      <p>
+        <button class="cta-btn" id="open">Написати мені</button>
+      </p>
+    </header>
+
+    <div class="container">
+      <div class="oeb">
+        <a href="./04.12.2021/index.html" target="_blank"
+          ><img src="./img/tic-tac.png" alt="tic-tac"
+        /></a>
+
+        <a href="./11.12.2021/index.html" target="_blank"
+          ><img src="./img/files.png" alt=""
+        /></a>
+        <a href="./18,12,2021/index.html" target="_blank"
+          ><img src="./img/secundomer.png" alt=""
+        /></a>
+
+        <a href="./27.11.2021/index.html" target="_blank"
+          ><img src="./img/calkulator.png" alt=""
+        /></a>
       </div>
     </div>
-  </div>
-  <script src="../js/index.js" type="module"></script>
-</body>
-
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Написати мені</h3>
+        </div>
+        <div class="modal-content">
+          <p>Залиши тут свої контакти та запитання</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Ім'я</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Твоє ім'я"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Твій Email"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password">Повідомлення</label>
+              <textarea
+                placeholder="Напиши своє повідомлення"
+                class="form-text"
+                rows="5"
+                cols="33"
+              ></textarea>
+            </div>
+            <input type="submit" value="Надіслати" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../js/index.js" type="module"></script>
+  </body>
 </html>
